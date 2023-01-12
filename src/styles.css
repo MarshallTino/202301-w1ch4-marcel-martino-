@@ -1,0 +1,57 @@
+@import url(/node_modules/@fontsource/nunito/400.css);
+@import url(/node_modules/@fontsource/nunito/800.css);
+
+:root {
+  --color-main: #ed6436;
+  --typography-main: "nunito", "sans-serif";
+  --typography-secondary: "nunito", "sans-serif";
+  --button-color: (var(--color-main));
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+body {
+  height: 100%;
+}
+.activities {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.activities__title {
+  font-size: 1.87rem;
+  flex: 1;
+  font-family: "nunito";
+  text-transform: uppercase;
+  color: #ed6436;
+}
+
+.activities__section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.takealook__title {
+  font-family: var(--typography-main);
+  font-weight: 800;
+  font-size: 5.625rem;
+  margin: 0px;
+  flex: 1;
+}
+
+.takealook__button {
+  flex: 3;
+  height: 85px;
+  width: 205px;
+  background-color: #ed6436;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0px 40px 40px;
+
+  font-family: var(--typography-main);
+}
