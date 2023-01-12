@@ -15,12 +15,13 @@
 }
 body {
   height: 100%;
+  margin: 20px;
 }
 .activities {
   height: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .activities__title {
@@ -33,7 +34,7 @@ body {
 
 .activities__section {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
 }
 .takealook__title {
@@ -45,13 +46,15 @@ body {
 }
 
 .takealook__button {
-  flex: 3;
+  flex: 1;
+  color: white;
   height: 85px;
   width: 205px;
   background-color: #ed6436;
   align-items: center;
   justify-content: center;
   border-radius: 0px 40px 40px;
+  display: flex;
 
   font-family: var(--typography-main);
 }
