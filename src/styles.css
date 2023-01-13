@@ -26,27 +26,31 @@ body {
 
 .activities__title {
   font-size: 1.87rem;
-  flex: 1;
+  flex: 6;
   font-family: "nunito";
   text-transform: uppercase;
   color: #ed6436;
 }
 
 .activities__section {
+  flex: 2;
   display: flex;
+  width: 100%;
   flex-direction: row;
   align-items: center;
+  flex-wrap: wrap;
 }
 .takealook__title {
   font-family: var(--typography-main);
   font-weight: 800;
   font-size: 5.625rem;
   margin: 0px;
-  flex: 1;
+  flex: 6;
 }
 
 .takealook__button {
   flex: 1;
+  font-size: 30px;
   color: white;
   height: 85px;
   width: 205px;
@@ -55,6 +59,47 @@ body {
   justify-content: center;
   border-radius: 0px 40px 40px;
   display: flex;
-
+  min-width: 205px;
   font-family: var(--typography-main);
+  max-width: 205px;
+}
+
+.main-section {
+  padding-top: 20px;
+  height: 525px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.main-section__cards :nth-child(1) {
+  min-height: 525px;
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  flex: 1;
+  margin: 30px;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  color: rgba(24, 24, 24, 0);
+}
+
+.first-card {
+  background-image: url(/media/01.jpg);
+  border-radius: 20px;
+  display: flex;
+}
+
+.second-card {
+  background-image: url(/media/02.jpg);
+  border-radius: 20px;
+}
+
+.third-card {
+  background-image: url(/media/03.jpg);
+  border-radius: 20px;
 }
